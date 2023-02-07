@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+/* // // thepa technical react tutorial - 21
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const youtuber = 'Jhankar Mahbub'
+
+const favProgram = 'React JS'
+
+function myName() {
+  let name = 'Asraf'
+  return (name);
+};
+
+const myNames = () => {
+  let name = 'Jehad'
+  return (name)
 }
 
-export default App;
+
+export default youtuber
+
+export { favProgram, myName, myNames } */
+
+
+
+// // // thepa technical react tutorial - 22
+
+import React from 'react'
+import add from "./Calculator";
+import { sub, mult, div } from './Calculator'
+
+const App = () => {
+  return (
+    <>
+      <ul>
+        <li>The sum of two number: {add(40, 4)}</li>
+        <li>The sum of two number: {sub(40, 4)}</li>
+        <li>The sum of two number: {mult(40, 4)}</li>
+        <li>The sum of two number: {div(40, 21)}</li>
+      </ul>
+    </>
+  )
+}
+
+export default App

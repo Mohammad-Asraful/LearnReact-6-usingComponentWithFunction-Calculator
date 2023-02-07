@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/* // // thepa technical react tutorial - 21
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+import React from "react";
+import ReactDOM from "react-dom";
+import youtuber, { favProgram, myName, myNames } from './App'
+// import { favProgram } from "./App";
+
+ReactDOM.render(
+  <>
+    <ol>
+      <li>Asraf</li>
+      <li>{youtuber}</li>
+      <li>{favProgram}</li>
+      <li>{myName()}</li>
+      <li>{myNames()}</li>
+    </ol>
+  </>, document.getElementById('root')
+) */
+
+
+// // // thepa technical react tutorial - 22
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+
+ReactDOM.render(
+  <>
     <App />
-  </React.StrictMode>
-);
+  </>, document.getElementById('root')
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
